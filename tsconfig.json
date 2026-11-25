@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // 타입 검사 강도: strict는 엄격한 검사 묶음을 전부 켠다
+    "strict": true,
+
+    // 결과 파일을 만들지 않고 검사만 한다 (실행은 tsx, 테스트는 vitest가 담당)
+    "noEmit": true,
+
+    // 최신 문법과 import/export를 그대로 쓴다
+    "target": "esnext",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+
+    // 1~3주차는 .js로 작성하므로 .js 파일도 프로젝트에 포함한다
+    // checkJs가 false라 .js 내용은 타입 검사하지 않는다 (4주차에 .ts로 바꾸면 검사 대상이 된다)
+    "allowJs": true,
+    "checkJs": false,
+
+    // Node.js 내장 기능(console, process 등)의 타입
+    "types": ["node"],
+
+    // 설치한 라이브러리 내부의 타입 파일은 검사를 건너뛴다
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}

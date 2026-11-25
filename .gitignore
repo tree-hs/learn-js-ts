@@ -1,0 +1,21 @@
+# 설치한 패키지 (npm install로 다시 받을 수 있다)
+node_modules/
+
+# 빌드·테스트 결과물
+dist/
+coverage/
+
+# 환경 변수 (비밀 값이 들어갈 수 있다)
+.env
+.env.*
+!.env.example
+
+# 로그
+*.log
+
+# OS·에디터가 만드는 파일
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

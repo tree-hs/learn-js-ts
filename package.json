@@ -1,0 +1,24 @@
+{
+  "name": "learn-js-ts",
+  "version": "1.0.0",
+  "description": "JavaScript 심화와 TypeScript 주차별 과제",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tree-hs/learn-js-ts.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.6.7",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  }
+}
